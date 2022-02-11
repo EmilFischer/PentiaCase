@@ -6,6 +6,5 @@
         public DateTime Made { get; set; }
         public string Model { get; set; }
         public int Color { get; set; }
-        public CarExtra Extra { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PentiaCase.Entities.Database;
+using PentiaCase.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<CaseDbContext>(
     op => op.UseInMemoryDatabase(Guid.NewGuid().ToString()));
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 
 var app = builder.Build();
 

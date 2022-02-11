@@ -12,5 +12,8 @@ namespace PentiaCase.Entities.Database
         public DbSet<Customer> Customers { get; set; }
         public DbSet<SalesPerson> SalesPeople { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Extra> Extras { get; set; }
+        public DbSet<CarExtra> CarExtras { get; set; }
+        public DbSet<CarSales> CarSales { get; set; }
     }
 }

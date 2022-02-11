@@ -1,6 +1,6 @@
 ﻿namespace PentiaCase.Helpers
 {
-    public enum Color
+    public enum ColorEnum
     {
         green,
         blue,
