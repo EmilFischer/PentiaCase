@@ -78,13 +78,13 @@ namespace PentiaCase.Helpers
 
         private static void AddCars(CaseDbContext context)
         {
-            var models = new[] { "Volkswagen", "Fiat" };
+            var models = new[] { "Prius", "Civic" };
             var colors = new[] { 3, 5 };
             for (int i = 0; i < 2; ++i)
             {
                 var car = new Car
                 {
-                    Made = DateTime.Now.AddYears(-2),
+                    Make = i,
                     Model = models[i],
                     Color = colors[i]
                 };
